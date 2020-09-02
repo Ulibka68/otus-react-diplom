@@ -1,5 +1,6 @@
 import React from "react";
 import About from "./About";
+import {ExpenceList} from "./ExpenceList"
 
 import {
   BrowserRouter as Router,
@@ -29,7 +30,7 @@ class App extends React.Component<any, any> {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/forms">Формы</Link>
+              <Link to="/list">Список</Link>
             </li>
           </ul>
         </div>
@@ -38,10 +39,8 @@ class App extends React.Component<any, any> {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/forms">
-            <div>
-              <h1>Урок9 формы</h1>
-            </div>
+          <Route path="/list">
+              <ExpenceList />
           </Route>
         </Switch>
       </Router>

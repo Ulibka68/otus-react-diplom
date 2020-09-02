@@ -20,6 +20,12 @@ module.exports = {
     contentBase: path.join(__dirname, "/dist"),
     hot: true,
     historyApiFallback: true,
+    proxy : {
+      '/api': {
+        changeOrigin: true,
+        target: 'http://expense-manager-api/'
+      },
+    },
   },
 
   resolve: {

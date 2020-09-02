@@ -8,3 +8,17 @@ npm view @storybook/react version
 npm i -D npm-check-updates
 ncu - просмотр
 ncu -u -- Обновить пакеты
+
+
+
+export const serverRequestPath = '/api/expenses/';
+
+******************************
+пример
+http://expense-manager-api/api/expenses
+post
+form-data
+
+name
+amount
+description
