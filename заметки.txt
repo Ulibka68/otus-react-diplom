@@ -1,0 +1,10 @@
+
+npm view <имя_пакета> version
+npm view @storybook/react version
+
+6 0 21
+^5.3.19",
+
+npm i -D npm-check-updates
+ncu - просмотр
+ncu -u -- Обновить пакеты
