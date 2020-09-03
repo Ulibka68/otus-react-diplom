@@ -8,14 +8,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
+import * as expenceTypes from "./ExpenceTypes";
 
-interface iState {
-    name: string;
-    description?: string;
-    amount: number;
-}
-
-export class ExpenceList extends React.Component<any, {expList : iState[]}> {
+export class ExpenceList extends React.Component<any, { expList: expenceTypes.iState[] }> {
     constructor(props: any) {
         super(props);
         // this.state=[];
@@ -28,7 +23,7 @@ export class ExpenceList extends React.Component<any, {expList : iState[]}> {
             })
             .then((data) => {
                 console.log(data);
-                this.setState({expList : data});
+                this.setState({expList: data});
             });
     }
 
