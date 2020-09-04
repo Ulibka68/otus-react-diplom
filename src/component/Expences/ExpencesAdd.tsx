@@ -40,7 +40,7 @@ export class ExpencesAdd extends React.Component<any, any> {
             // @ts-ignore
             formData.append(v, values[v]);
         }
-        fetch('/api/expenses/', {
+        fetch(expenceTypes.expenceRoute.appendExpence, {
             method: 'POST',
             body: formData
         }).then((response) => {

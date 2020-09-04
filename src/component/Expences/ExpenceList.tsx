@@ -17,7 +17,7 @@ export class ExpenceList extends React.Component<any, { expList: expenceTypes.iS
     }
 
     componentDidMount() {
-        fetch('/api/expenses/')
+        fetch(expenceTypes.expenceRoute.getList)
             .then((response) => {
                 return response.json();
             })

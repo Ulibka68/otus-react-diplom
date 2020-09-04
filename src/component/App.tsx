@@ -1,7 +1,7 @@
 import React from "react";
 import About from "./About";
-import {ExpenceList} from "./ExpenceList";
-import {ExpencesAdd} from "./ExpencesAdd";
+import {ExpenceList} from "./Expences/ExpenceList";
+import {ExpencesAdd} from "./Expences/ExpencesAdd";
 
 import {
     BrowserRouter as Router,
